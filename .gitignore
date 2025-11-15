@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+.py[cod]
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Cache directories
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# PDM
+.pdm-python
+.pdm.toml
+__pypackages__/
+
+# Environment variables (API keys)
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
