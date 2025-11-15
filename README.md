@@ -4,7 +4,7 @@
 
 ## 이벤트 참여
 
-[빗썸 이벤트 페이지](https://www.bithumb.com/react/feed/event/143)
+[빗썸 이벤트 페이지](https://www.bithumb.com/react/feed/event/143) - 제발 이벤트 신청 누르세요
 
 ## 사용 방법
 
