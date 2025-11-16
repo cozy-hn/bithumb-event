@@ -8,6 +8,18 @@
 
 ## 사용 방법
 
+### 0. uv 설치
+
+이 프로젝트는 의존성 관리를 **uv**로만 수행합니다. uv가 없다면 [설치 가이드](https://docs.astral.sh/uv/#installation)를 참고하거나 다음 중 하나를 사용하세요.
+
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows (PowerShell)
+powershell -ExecutionPolicy Bypass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
 ### 1. API 키 발급
 
 **중요: API 1.0에서 키를 발급받아야 합니다. API 2.0은 지원하지 않습니다.**
@@ -35,11 +47,11 @@ cp .env.example .env
 ### 3. 실행
 
 ```bash
-# 의존성 설치
-pdm install
+# 의존성 설치 (첫 실행 또는 의존성 변경 시)
+uv sync
 
 # 프로그램 실행
-pdm run python buy_btc.py
+uv run python buy_btc.py
 ```
 
 ## 주의사항

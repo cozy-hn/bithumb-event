@@ -1,15 +1,11 @@
 [project]
 name = "bithumb-event"
 version = "0.1.0"
-description = "Default template for PDM package"
+description = "Automated BTC purchase helper for the Bithumb promotion"
 authors = [
     {name = "cozy-hn", email = "jhk2721@gmail.com"},
 ]
 dependencies = ["ccxt>=4.5.19", "python-dotenv>=1.2.1"]
-requires-python = "==3.13.*"
+requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
-
-
-[tool.pdm]
-distribution = false

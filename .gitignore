@@ -10,14 +10,13 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# PDM
-.pdm-python
-.pdm.toml
-__pypackages__/
-
 # Environment variables (API keys)
 .env
 .env.local
+
+# uv
+.venv/
+.uv/
 
 # IDE
 .vscode/
