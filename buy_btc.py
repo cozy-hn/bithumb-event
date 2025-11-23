@@ -61,7 +61,7 @@ def buy_btc_market():
         except Exception as e:
             print_log(f"  -> [오류 발생] 한 턴을 건너뜁니다: {e}")
 
-        # 대기: 30초 ~ 30분 랜덤
+        # 대기: 30초 ~ 3분 랜덤
         wait_time = random.randint(30, 180)
         print_log(f"  -> {wait_time}초 대기 중...")
         time.sleep(wait_time)
