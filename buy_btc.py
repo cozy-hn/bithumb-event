@@ -12,7 +12,7 @@ def print_log(msg):
     print(f'{date_str}: {msg}')
 
 def buy_btc_market():
-    """빗썸에서 7000~12000원 사이 금액으로 랜덤 매수/매도 반복"""
+    """빗썸에서 15000~18000원 사이 금액으로 랜덤 매수/매도 반복"""
 
     bithumb = ccxt.bithumb({
         'apiKey': os.getenv('pubkey'),
@@ -28,8 +28,8 @@ def buy_btc_market():
             # 매수/매도 랜덤 결정
             side = 'buy' if random.random() < 0.5 else 'sell'
 
-            # 금액 결정 (7,000원 ~ 12,000원)
-            target_krw_amount = random.randint(7000, 12000)
+            # 금액 결정 (15,000원 ~ 18,000원)
+            target_krw_amount = random.randint(15000, 18000)
 
             # 목표 수량 계산: (금액) / (현재가)
             target_volume = target_krw_amount / current_price
